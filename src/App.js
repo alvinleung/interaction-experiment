@@ -47,8 +47,11 @@ function App() {
         <h4>The task</h4>
         <p>
           In the next few screens, you will be presented a list of time slots
-          each has different amout of people. Your task will be selecting the
-          time slot which has the <em>highest amount</em> of people in it.
+          each has different amout of people.{" "}
+          <strong>
+            Your task will be selecting the time slot which has the{" "}
+            <em>highest amount</em> of people in it.
+          </strong>
         </p>
         <p>You will be asked to complete the task 5 times.</p>
       </IntroScreen>
