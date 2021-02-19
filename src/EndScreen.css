@@ -1,0 +1,15 @@
+.record {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.record__item {
+  flex: 1 1 1rem;
+}
+
+.record__item--number {
+  text-align: right;
+}

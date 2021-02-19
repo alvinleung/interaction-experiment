@@ -1,0 +1,44 @@
+.selector-container {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 0rem;
+  z-index: 1000;
+}
+
+.selector-draggable {
+  height: var(--item-height);
+  border: var(--selector-border);
+  border-radius: 4px;
+}
+
+.selector-draggable:hover {
+  cursor: grab;
+}
+.selector-draggable:active {
+  cursor: grabbing;
+}
+
+.selector-handle {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 0rem;
+
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 4px;
+
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  cursor: grab;
+}
+.selector-handle:active {
+  cursor: grabbing;
+}
+
+.draggable-container {
+  margin-bottom: 6rem;
+}

@@ -1,0 +1,8 @@
+.scrollable-container {
+  overflow-y: hidden;
+  height: 80vh;
+}
+
+.scrollable-container > div:last-child {
+  padding-bottom: 80vh;
+}

@@ -1,0 +1,21 @@
+.selectable-container {
+}
+
+.selectable-item {
+  /* background-color: #eee; */
+  height: 4rem;
+  /* margin-bottom: 1rem; */
+  border-radius: 4px;
+  border-bottom: 2px solid #eee;
+
+  /* layout */
+  display: flex;
+}
+
+.selectable-item__time {
+  margin-right: auto;
+}
+
+.selectable-item--target {
+  /* background-color: rgb(104, 170, 255); */
+}

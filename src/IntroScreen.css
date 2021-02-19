@@ -1,0 +1,18 @@
+.intro-screen {
+  position: fixed;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+  background-color: #fff;
+
+  /* layout */
+  padding: 1rem;
+  z-index: 10000000;
+}
+
+.intro-screen > button {
+  width: 100%;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
