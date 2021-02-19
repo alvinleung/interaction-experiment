@@ -61,6 +61,11 @@ const Test = ({
           />
         )}
         <div className="test-submit-container">
+          <div>
+            {design === "scroll"
+              ? "Please scroll the background to select timeslot"
+              : "Please drag the selection box to select timeslot"}
+          </div>
           <button onClick={submitTest}>Select</button>
         </div>
       </>
