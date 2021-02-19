@@ -56,10 +56,10 @@ function RatingGroup({ groupName, onChange = (val) => {} }) {
 function RateItem({ groupName, value, onChange }) {
   return (
     <>
-      <label for={groupName}>{value}</label>
+      <label for={groupName + value}>{value}</label>
       <input
         type="radio"
-        id={groupName}
+        id={groupName + value}
         name={groupName}
         value={value}
         onChange={() => {

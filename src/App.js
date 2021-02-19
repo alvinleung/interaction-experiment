@@ -9,7 +9,7 @@ import RateScreen from "./RateScreen";
 
 const EACH_DESIGN_TASK_ATTEMPTS = 6;
 // const ENDING_TASK_ATTEMPTS = 12;
-const ENDING_TASK_ATTEMPTS = 3;
+const ENDING_TASK_ATTEMPTS = 12;
 const FOLD_ATTEMPTS = 3;
 
 function App() {
