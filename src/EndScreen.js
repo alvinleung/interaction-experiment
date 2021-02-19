@@ -5,7 +5,7 @@ const EndScreen = ({ result, design1Rating, design2Rating }) => {
   return (
     <div className="intro-screen">
       <h1>Thanks for your participation!</h1>
-      <p>
+      <p style={{ color: "#F00" }}>
         please screen capture the following result and send it back to Alvin
       </p>
       {/* { time: time, design: design, type: type, errorCount: errorCount } */}
