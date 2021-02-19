@@ -9,6 +9,9 @@
 .record__item {
   flex: 1 1 1rem;
 }
+.record__item:first-child {
+  flex: 2 2 1rem;
+}
 
 .record__item--number {
   text-align: right;

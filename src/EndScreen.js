@@ -1,7 +1,7 @@
 import React from "react";
 import "./EndScreen.css";
 
-const EndScreen = ({ result }) => {
+const EndScreen = ({ result, design1Rating, design2Rating }) => {
   return (
     <div className="intro-screen">
       <h1>Thanks for your participation!</h1>
@@ -23,6 +23,15 @@ const EndScreen = ({ result }) => {
           </div>
         );
       })}
+      <p>
+        <div>
+          Difficulty: d1 = {design1Rating}, d2 = {design2Rating}
+        </div>
+        <div>
+          ScreenSize: {window.innerWidth}x{window.innerHeight}
+        </div>
+        <div>Device: {navigator.platform}</div>
+      </p>
     </div>
   );
 };

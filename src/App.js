@@ -5,9 +5,11 @@ import "./variables.css";
 import Test from "./Test";
 import IntroScreen from "./IntroScreen";
 import EndScreen from "./EndScreen";
+import RateScreen from "./RateScreen";
 
 const EACH_DESIGN_TASK_ATTEMPTS = 6;
-const ENDING_TASK_ATTEMPTS = 12;
+// const ENDING_TASK_ATTEMPTS = 12;
+const ENDING_TASK_ATTEMPTS = 3;
 const FOLD_ATTEMPTS = 3;
 
 function App() {
@@ -134,10 +136,23 @@ function App() {
       return;
     }
     if (completedTaskCount.current === ENDING_TASK_ATTEMPTS) {
-      setCurrentPage(<EndScreen result={record.current} />);
+      setCurrentPage(generateEndScreens());
       return;
     }
     setCurrentPage(generateNextTest(testingDesign.current));
+  }
+
+  function generateEndScreens() {
+    const doneHandler = (design1Rating, design2Rating) => {
+      setCurrentPage(
+        <EndScreen
+          result={record.current}
+          design1Rating={design1Rating}
+          design2Rating={design2Rating}
+        />
+      );
+    };
+    return <RateScreen onDone={doneHandler} />;
   }
 
   function changeDesign() {
